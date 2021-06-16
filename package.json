@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
   },
-  "homepage": "https://beyond-ewha-yonsei.github.io/Homepage_react/",
+  "homepage": "www.gobeyond.ac",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
