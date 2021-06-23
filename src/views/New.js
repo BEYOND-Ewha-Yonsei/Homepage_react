@@ -23,10 +23,8 @@ import {
   Col
 } from "reactstrap";
 import * as Scroll from 'react-scroll';
-import { Profiler } from "react";
 var Element = Scroll.Element;
 var scroll = Scroll.animateScroll;
-
 class New extends React.Component {
   
   componentDidMount() {
@@ -35,6 +33,7 @@ class New extends React.Component {
     this.refs.main.scrollTop = 0;
     let headroom = new Headroom(document.getElementById("navbar-main"));
     headroom.init();
+    var element = document.getElementById("Container1");
   }
   state = {
     collapseClasses: "",
@@ -101,21 +100,21 @@ class New extends React.Component {
                 </div>
                 <Nav className="ml-lg-auto " navbar>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(0,0)}>
+                    <NavLink onClick={()=> document.getElementById("Container1").scrollIntoView()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                  <NavLink  onClick={()=> scroll.scrollTo(650,0)}>About Us</NavLink>
+                  <NavLink onClick={()=> document.getElementById("Container2").scrollIntoView()}>About Us</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(1320,0)}>Projects</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container3").scrollIntoView()}>Projects</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(2420,0)}>Member</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container4").scrollIntoView()}>Member</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(4120,0)}>Contact</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container5").scrollIntoView()}>Contact</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
@@ -151,22 +150,20 @@ class New extends React.Component {
           </Navbar>
         </header>
         <main ref="main">
-        <Element name="Container1">
+        <Element id="Container1">
           <Home />
-        </Element>
-        <Element name="Container2">
+          </Element>
+        <Element id="Container2">
         <AboutUs/>
         </Element>
-        <Element name="Container3">
+        <Element id="Container3">
           <Projects />
         </Element>
-        <Element name="Container5">
+        <Element id="Container4">
           <Profile_Celo/>
-        </Element>
-        <Element name="Container5">
           <Profile_Flow/>
         </Element>
-        <Element name="Container4">
+        <Element id="Container5">
           <Contact />
         </Element>
         

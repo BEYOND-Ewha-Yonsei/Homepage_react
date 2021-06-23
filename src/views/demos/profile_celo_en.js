@@ -24,6 +24,22 @@ export default class Profile_Celo extends React.Component {
                 </Col>
               </Row>
               <Row>
+              <Col className="mb-5 mb-lg-0" lg="3" md="6">
+                  <div className="px-4">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                      src={require("assets/img/theme/권준혁_경제학과 _ Junhyeok Kweon_Economics.JPG")}
+                      style={{ width: "200px" }}
+                    />
+                    <div className="pt-4 text-center">
+                      <h5 className="title">
+                        <span className="d-block mb-1">Junhyeok Kweon</span>
+                        <small className="h6 text-muted">Economics</small>
+                      </h5>
+                    </div>
+                  </div>
+                </Col>
                 <Col className="mb-5 mb-lg-0" lg="3" md="6">
                   <div className="px-4">
                     <img

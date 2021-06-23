@@ -100,22 +100,22 @@ class New extends React.Component {
                   </Row>
                 </div>
                 <Nav className="ml-lg-auto " navbar>
-                  <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(0,0)}>
-                    Home <span className="sr-only">(current)</span>
+                <NavItem>
+                    <NavLink onClick={()=> document.getElementById("Container1").scrollIntoView()}>
+                      Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                  <NavLink  onClick={()=> scroll.scrollTo(650,0)}>About Us</NavLink>
+                  <NavLink onClick={()=> document.getElementById("Container2").scrollIntoView()}>About Us</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(1320,0)}>Projects</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container3").scrollIntoView()}>Projects</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(2420,0)}>Member</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container4").scrollIntoView()}>Member</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={()=> scroll.scrollTo(4120,0)}>Contact</NavLink>
+                    <NavLink onClick={()=> document.getElementById("Container5").scrollIntoView()}>Contact</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
@@ -160,13 +160,11 @@ class New extends React.Component {
         <Element name="Container3">
           <Projects_eng />
         </Element>
-        <Element name="Container5">
+        <Element name="Container4">
           <Profile_Celo/>
-        </Element>
-        <Element name="Container5">
           <Profile_Flow/>
         </Element>
-        <Element name="Container4">
+        <Element name="Container5">
           <Contact />
         </Element>
         </main>

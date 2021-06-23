@@ -1,33 +1,18 @@
 {
-  "name": "argon-design-system-react",
+  "name": "homepage_react",
   "version": "1.1.0",
-  "description": "React version of Argon Design System by Creative Tim",
+  "description": "beyond homepage",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/BEYOND-Ewha-Yonsei/Homepage_react.git"
   },
   "keywords": [
-    "react",
-    "reactjs",
-    "argon",
-    "argon-react",
-    "design",
-    "design-react",
-    "argon-design",
-    "argon-design-react",
-    "kit",
-    "react-kit",
-    "argon-design-system",
-    "argon-design-system-react",
-    "design-system-react"
+    "react"
   ],
   "author": "Creative Tim",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
-  },
-  "homepage": "www.gobeyond.ac",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",

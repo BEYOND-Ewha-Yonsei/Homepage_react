@@ -34,30 +34,27 @@ class AboutUs extends React.Component {
                         src={require("assets/img/theme/celo.png")}
                         width="200"
                       />
-                      <h6 className="text-primary text-uppercase">
-                        Celo Team
-                      </h6>
                       <div className="text-lg-center btn-wrapper">
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="secondary"
-                          href="#pablo"
+                          href="hello@gobeyond.ac"
                           onClick={e => e.preventDefault()}
                         >
                           <i className="fa fa-envelope-o" />
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle ml-2"
-                          color="twitter"
-                          href="#pablo"
+                          color="success"
+                          href="https://instagram.com/beyond_ewhayonsei?utm_medium=copy_link"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className="fa fa-twitter" />
+                          <i className="fa fa-instagram" />
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle ml-2"
                           color="github"
-                          href="#pablo"
+                          href="https://github.com/BEYOND-Ewha-Yonsei"
                           onClick={e => e.preventDefault()}
                         >
                           <i className="fa fa-github" />
@@ -74,31 +71,29 @@ class AboutUs extends React.Component {
                         className="img-center img-fluid my-2"
                         src={require("assets/img/theme/flow.png")}
                         width="184"
+                        
                       />
-                      <h6 className="text-primary text-uppercase">
-                        Flow Team
-                      </h6>
                       <div className="text-lg-center btn-wrapper">
                         <Button
                           className="btn-icon-only rounded-circle"
                           color="secondary"
-                          href="#pablo"
+                          href="hello@gobeyond.ac"
                           onClick={e => e.preventDefault()}
                         >
                           <i className="fa fa-envelope-o" />
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle ml-2"
-                          color="twitter"
-                          href="#pablo"
+                          color="success"
+                          href="https://instagram.com/beyond_ewhayonsei?utm_medium=copy_link"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className="fa fa-twitter" />
+                          <i className="fa fa-instagram" />
                         </Button>
                         <Button
                           className="btn-icon-only rounded-circle ml-2"
                           color="github"
-                          href="#pablo"
+                          href="https://github.com/BEYOND-Ewha-Yonsei"
                           onClick={e => e.preventDefault()}
                         >
                           <i className="fa fa-github" />
